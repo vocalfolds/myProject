@@ -29,4 +29,18 @@ $ python2 mange.py runserver 8080
 If you want to change the sever's IP, pass it aong with the port. So listen on all public IPs
 $ python2 manage.py runserver 0.0.0.0:8080 &
 
+Set up database, for simplicity, I just use SQLite
+ENGINE 'django.db.backends.sqlite3'
+NAME  '/home/herostone/tmp/djangoExample/myproject/sqlite3.db'
+
+$python2 manage.py syncdb
+
+setup a user for SQLite database: herostone
+pass: address
+
+$ sqlite3 sqlite3.db
+>.schema
+>.help
+>.exit
+
 
