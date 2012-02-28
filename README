@@ -1,0 +1,32 @@
+This is the first Django app I wrote. In README I will record all python or shell commands. In each file developed, for every step, I will write git log into every commit. This will be my first time actually using git in serious. The intent is just to get a little more familiarer with git. Anyway, to really master this technique, practice is a must, just like in those days I learn Latex, Auctex, and Org-Mode. 
+
+In this example, I will be guided to create a basic poll application.
+It'll consist of two parts:
+* A public site that lets people view polls and vote in them.
+* An admin site that lets you add, change, and delete polls.
+
+# Create a Django project
+$ django-admin.py startproject myproject
+
+Setup a project in github. The name is myProject. 
+
+# In local machine
+$ git init 
+$ touch README
+$ git add README
+$ git add *.py
+$ git commit -m 'first commit'
+$ git remote add origin git@github.com:vocalfolds@gmail.com/myProject.git
+$ git push origin master
+
+# Run the sever for the first time
+$ python2 manage.py runserver
+
+Open a web brower and type url as: http://127.0.0.1:8000/, you will see a basic web page hosted by a lightweight web server
+# To change the default port
+$ python2 mange.py runserver 8080
+
+If you want to change the sever's IP, pass it aong with the port. So listen on all public IPs
+$ python2 manage.py runserver 0.0.0.0:8080 &
+
+
