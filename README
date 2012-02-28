@@ -43,4 +43,15 @@ $ sqlite3 sqlite3.db
 >.help
 >.exit
 
+$ git add README 
+$ git add settings.py
+$ git add sqlite3.db
 
+$ git commit -m ''
+$ git push origin
+
+Setup app
+$ python2 manage.py startapp polls
+$ git add polls/
+$ git status -s
+$ git commit -m 'Setup app poll'
