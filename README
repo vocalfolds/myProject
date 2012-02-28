@@ -55,3 +55,27 @@ $ python2 manage.py startapp polls
 $ git add polls/
 $ git status -s
 $ git commit -m 'Setup app poll'
+
+Edit poll/models.py
+It enalbe python create a database schema and database-access API
+
+Edit seetings.py and include polls
+
+
+$ python2 manage.py sql polls
+$ python2 manage.py validate
+$ python2 manage.py sqlcustom polls
+$ python2 manage.py sqlclear polls
+$ python2 manage.py sqlindexes polls
+$ python2 manage.py sqlall polls
+
+
+$ python2 manage.py syncdb
+
+Playing with API
+$ python2 manage.py shell 
+
+Add __unicode__() to Poll and Choice in model.py
+All a member was_published_today to Poll class
+
+
