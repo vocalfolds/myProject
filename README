@@ -78,4 +78,6 @@ $ python2 manage.py shell
 Add __unicode__() to Poll and Choice in model.py
 All a member was_published_today to Poll class
 
+---------------------------------------------------
+
 

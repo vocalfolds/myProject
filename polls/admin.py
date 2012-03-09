@@ -3,7 +3,7 @@ from django.contrib import admin
 
 class ChoiceInline(admin.TabularInline):
         model = Choice
-        extra = 3
+        extra = 2
 
 class PollAdmin(admin.ModelAdmin):
 	fieldsets = [
